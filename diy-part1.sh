@@ -19,7 +19,6 @@ sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 # Add a feed source
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 
-wget -P package/lean/r8152/patches https://raw.githubusercontent.com/immortalwrt/immortalwrt/openwrt-18.06/package/kernel/r8152/patches/010-compat-skb_mark_not_on_list-was-backported-since-ker.patch
 svn co https://github.com/Lienol/openwrt-package/trunk/luci-app-filebrowser package/luci-app-filebrowser
 #svn co https://github.com/Lienol/openwrt-package/trunk/luci-app-fileassistant package/luci-app-fileassistant
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
